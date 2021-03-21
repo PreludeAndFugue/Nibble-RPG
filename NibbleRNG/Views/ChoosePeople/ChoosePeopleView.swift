@@ -26,7 +26,7 @@ struct ChoosePeopleView: View {
                             person.image
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(height: 80)
+                                .frame(height: imageHeight)
                             Text(person.name)
                                 .font(.system(.title, design: .rounded))
                             Spacer()
@@ -49,6 +49,15 @@ struct ChoosePeopleView: View {
 // MARK: - Private
 
 private extension ChoosePeopleView {
+    private var imageHeight: CGFloat {
+        #if os(macOS) || targetEnvironment(macCatalyst)
+        return 68
+        #else
+        return 80
+        #endif
+    }
+
+
     private var doneButton: some View {
         Button(action: dismiss) {
             Text("Done")
