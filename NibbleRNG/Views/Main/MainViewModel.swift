@@ -37,8 +37,9 @@ class MainViewModel: ObservableObject {
 
 
     func run() {
-        let p = Double(Int.random(in: 0..<count))
-        let a = p * (360.0 / Double(count))
+        let c = count == 0 ? 1 : count
+        let p = Double(Int.random(in: 0..<c))
+        let a = p * (360.0 / Double(c))
         SwiftUI.withAnimation {
             _angle += 1440 + a
         }
