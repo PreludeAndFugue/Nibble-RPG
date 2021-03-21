@@ -16,7 +16,6 @@ final class ChoosePeopleVM: ObservableObject {
     private var action: Action?
 
     func update(selected: [Person], action: @escaping Action) {
-        print("update selected", selected)
         selectedPeople = Set(selected)
         self.action = action
     }
@@ -28,7 +27,6 @@ final class ChoosePeopleVM: ObservableObject {
 
 
     func select(_ person: Person) {
-        print("select", person)
         if selectedPeople.contains(person) {
             selectedPeople.remove(person)
         } else {
