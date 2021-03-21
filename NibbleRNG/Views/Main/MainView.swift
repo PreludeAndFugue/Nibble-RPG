@@ -56,6 +56,7 @@ struct MainView: View {
                         .foregroundColor(.white)
                         .background(Color.orange)
                         .cornerRadius(16)
+                        .padding()
                 }
             }
             .frame(maxWidth: .infinity)
