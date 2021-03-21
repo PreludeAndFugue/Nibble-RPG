@@ -7,19 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3D19CC25B36C3B001556ED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D19CB25B36C3B001556ED /* MainView.swift */; };
+		4E4BBF8C260797BD006B778A /* ChoosePeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BBF8B260797BD006B778A /* ChoosePeopleView.swift */; };
+		4E4BBF8F2607A3BA006B778A /* ChoosePeopleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BBF8E2607A3BA006B778A /* ChoosePeopleVM.swift */; };
 		4E4FEF1F25B330F4009BD8B4 /* NibbleRNGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FEF1E25B330F4009BD8B4 /* NibbleRNGApp.swift */; };
-		4E4FEF2125B330F4009BD8B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FEF2025B330F4009BD8B4 /* ContentView.swift */; };
 		4E4FEF2325B330F4009BD8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4FEF2225B330F4009BD8B4 /* Assets.xcassets */; };
 		4E4FEF2625B330F4009BD8B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4FEF2525B330F4009BD8B4 /* Preview Assets.xcassets */; };
+		4E4FEF3125B33113009BD8B4 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FEF3025B33113009BD8B4 /* People.swift */; };
+		4E4FEF3525B3321D009BD8B4 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4FEF3425B3321D009BD8B4 /* PersonView.swift */; };
+		4E7820EB2607946000C4C651 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7820EA2607946000C4C651 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E3D19CB25B36C3B001556ED /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4E4334DA25DD84AE00021DAF /* NibbleRNG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NibbleRNG.entitlements; sourceTree = "<group>"; };
+		4E4BBF8B260797BD006B778A /* ChoosePeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePeopleView.swift; sourceTree = "<group>"; };
+		4E4BBF8E2607A3BA006B778A /* ChoosePeopleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePeopleVM.swift; sourceTree = "<group>"; };
 		4E4FEF1B25B330F4009BD8B4 /* NibbleRNG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NibbleRNG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4FEF1E25B330F4009BD8B4 /* NibbleRNGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibbleRNGApp.swift; sourceTree = "<group>"; };
-		4E4FEF2025B330F4009BD8B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E4FEF2225B330F4009BD8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4FEF2525B330F4009BD8B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E4FEF2725B330F4009BD8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E4FEF3025B33113009BD8B4 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		4E4FEF3425B3321D009BD8B4 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		4E7820EA2607946000C4C651 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E4BBF8A260797AC006B778A /* ChoosePeople */ = {
+			isa = PBXGroup;
+			children = (
+				4E4BBF8B260797BD006B778A /* ChoosePeopleView.swift */,
+				4E4BBF8E2607A3BA006B778A /* ChoosePeopleVM.swift */,
+			);
+			path = ChoosePeople;
+			sourceTree = "<group>";
+		};
 		4E4FEF1225B330F4009BD8B4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +72,10 @@
 		4E4FEF1D25B330F4009BD8B4 /* NibbleRNG */ = {
 			isa = PBXGroup;
 			children = (
+				4E4334DA25DD84AE00021DAF /* NibbleRNG.entitlements */,
+				4E4FEF2F25B33103009BD8B4 /* Model */,
+				4E4FEF2E25B330FE009BD8B4 /* Views */,
 				4E4FEF1E25B330F4009BD8B4 /* NibbleRNGApp.swift */,
-				4E4FEF2025B330F4009BD8B4 /* ContentView.swift */,
 				4E4FEF2225B330F4009BD8B4 /* Assets.xcassets */,
 				4E4FEF2725B330F4009BD8B4 /* Info.plist */,
 				4E4FEF2425B330F4009BD8B4 /* Preview Content */,
@@ -67,6 +89,33 @@
 				4E4FEF2525B330F4009BD8B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E4FEF2E25B330FE009BD8B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E4BBF8A260797AC006B778A /* ChoosePeople */,
+				4E7820E92607944900C4C651 /* Main */,
+				4E4FEF3425B3321D009BD8B4 /* PersonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E4FEF2F25B33103009BD8B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E4FEF3025B33113009BD8B4 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E7820E92607944900C4C651 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4E3D19CB25B36C3B001556ED /* MainView.swift */,
+				4E7820EA2607946000C4C651 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4FEF2125B330F4009BD8B4 /* ContentView.swift in Sources */,
+				4E4BBF8F2607A3BA006B778A /* ChoosePeopleVM.swift in Sources */,
+				4E4BBF8C260797BD006B778A /* ChoosePeopleView.swift in Sources */,
+				4E7820EB2607946000C4C651 /* MainViewModel.swift in Sources */,
+				4E3D19CC25B36C3B001556ED /* MainView.swift in Sources */,
+				4E4FEF3525B3321D009BD8B4 /* PersonView.swift in Sources */,
+				4E4FEF3125B33113009BD8B4 /* People.swift in Sources */,
 				4E4FEF1F25B330F4009BD8B4 /* NibbleRNGApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NibbleRNG/NibbleRNG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NibbleRNG/Preview Content\"";
 				DEVELOPMENT_TEAM = LE7C443W53;
@@ -279,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nibbleapps.NibbleRNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NibbleRNG/NibbleRNG.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NibbleRNG/Preview Content\"";
 				DEVELOPMENT_TEAM = LE7C443W53;
@@ -301,6 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nibbleapps.NibbleRNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
