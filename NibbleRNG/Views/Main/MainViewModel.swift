@@ -109,6 +109,6 @@ extension MainViewModel.NumberedPerson: Identifiable {
 
 private extension MainViewModel {
     static func createPeople() -> [NumberedPerson] {
-        People.people.enumerated().map({ NumberedPerson(n: $0.offset, person: $0.element) })
+        People.currentPeople.enumerated().map({ NumberedPerson(n: $0.offset, person: $0.element) })
     }
 }

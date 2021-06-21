@@ -10,7 +10,7 @@ import Combine
 final class ChoosePeopleVM: ObservableObject {
     typealias Action = ([Person]) -> Void
 
-    let allPeople = People.people
+    let allPeople = People.allPeople
     @Published var selectedPeople: Set<Person> = []
 
     private var action: Action?

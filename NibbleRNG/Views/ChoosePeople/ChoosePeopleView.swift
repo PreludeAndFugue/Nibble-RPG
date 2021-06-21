@@ -20,7 +20,7 @@ struct ChoosePeopleView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(People.people) { person in
+                ForEach(model.allPeople) { person in
                     Button(action: { model.select(person) }) {
                         HStack {
                             person.image
